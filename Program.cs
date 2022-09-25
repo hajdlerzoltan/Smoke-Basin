@@ -11,12 +11,16 @@ namespace Smoke_Basin
 	{
 		static void Main(string[] args)
 		{
+			int[,] matrixData;
+
 			try
 			{
 				StreamReader sr = new StreamReader("data.txt");
 				string line = sr.ReadLine();
-				Int64.Parse(line);
-				sr.re
+				while (line != null)
+				{
+
+				}
 			}
 			catch (Exception)
 			{
@@ -24,7 +28,7 @@ namespace Smoke_Basin
 			}
 			
 			int input = int.Parse(Console.ReadLine());
-			int[,] matrixData = new int[input,0];
+			matrixData = new int[input,0];
 			for (int i = 0; i < matrixData.GetLength(0); i++) {
 				for (int j = 0; j < matrixData.GetLength(1); j++)
 				{
